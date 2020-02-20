@@ -3,21 +3,26 @@
 ##1.Python程式基礎I：Python的開發環境、串列與繪圖 
 
 ###1.1 Jupyter魔術指令pylab
-  '%pylab inline' inline表示於網頁中顯示結果(較不建議使用)
+
+  -%pylab inline' inline表示於網頁中顯示結果(較不建議使用)
   其餘指令
-  'pi'
-  'sin()'
-  'plot()'
-  'randn()' 取亂數
+  -'pi'
+  -'sin()'
+  -'plot()'
+  -'randn()' 取亂數
+
 ###1.2 markdown筆記
   如何設定標題次序、加入超連結、插入圖片、數學符號
+
 ###1.3 List
   -Python如何定義List
   -List的運算
+
 ###1.4 Hello World
   -字串定義與運用
   -換列符號：三引號
   -'print()'
+
 ###1.5 拍拍機器人(互動式程式語言)
   -'input()'
   -美金換算與拍拍機器人範例
