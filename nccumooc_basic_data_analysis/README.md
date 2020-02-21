@@ -31,34 +31,35 @@
   ```
 ### 2.4 函數撰寫
 ### 2.5 函數練習
-  `
+  ```
   def say_hi(name, place):
       message= "嗨，來自{}的{}！".format(place, name)
       return message
-  `
+  ```
 ### 2.6 List切割(空隙次序)
 ### 2.7 字串切割(空隙次序)
 ### 2.8 List快速生成
-  `L = list(range(10, 18))`
-  `list("ABCDEFG")`
+  `L = list(range(10, 18))`、`list("ABCDEFG")`
 ### 2.9 for迴圈
 ### 2.10 搜索資料 `in`
 ### 2.11 if條件判斷
-  `message = input(">> ")
+  ```message = input(">> ")
   if ("Y" in message):
       print("OK")
   elif ("N" in message):
       print("OK")
   else:
-      print("NO！")`
+      print("NO！")
+  ```
 ### 2.12取整數亂數`randint()`
 
 ## 3.Python強大的秘密：numpy、向量化與各式套件
 ### 3.1 正規讀套件方式
-  `%matplotlib inline 
+  ```%matplotlib inline 
   import numpy as np 
   import matplotlib.pyplot as plt
-  import pandas as pd`
+  import pandas as pd
+  ```
 ### 3.2 處理List資料 `.append()`
 ### 3.3 Array(盡量以array取代迴圈，節省計算速度) `np.array()` `np.dot()`
 ### 3.4 Array資料結構轉換 
@@ -72,17 +73,38 @@
   1.`plt.plot(y)`
   2.`np.linspace()`等距取點
 ### 3.7 Array篩選資料 array = array[條件]
-  `
-  plt.plot(x, y)
+  ```plt.plot(x, y)
   plt.plot(x[y>0], y[y>0], "o")
-  `
+  ```
 
 ## 4.處理與展示資料的技巧：Python的字典檔與jupyter互動功能
-### 4.1
-
+### 4.1 字典檔
+  `mydict = {'apple':'蘋果', 'banana':'香蕉'}`
+### 4.2 互動模式
+  ```from ipywidgets import interact
+  interact()
+  ```
+### 4.3 圖形互動
+### 4.4 圖形互動與overfitting
+### 4.5 互動 BMI計算器
 
 ## 5.試算表：pandas數據分析
+### 5.1 Pandas 如同 Python的EXCEL
+  1. ` df= pd.read_csv(".csv")`
+  2. ` df.head()`
+  3. `.plot()`、`.hist()`
+  4. DF運算、相關係數、排序
+### 5.2 Pandas基本數據分析
+### 5.3 製作DF並組合
+  1. `df1=pd.DataFrame(mydata, columns=list("ABC"))`
+  2. `df3=pd.concat([df1,df2], axis=0)`
+### 5.4 Groupby找到美國UFO目擊洲
+  `.groupby("").count()` UFO目擊洲
+### 5.5 Pandas的loc定位法
+  `df.loc[2:3, "B":"C"]` 選取定位
+### 5.6 pandas-datareader以股票資料為例
 
 ## 6.預測未來：用線性迴歸做預測
 
 ## 7.成為機器學習專家：機器學習概要
+
