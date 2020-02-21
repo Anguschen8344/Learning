@@ -25,8 +25,8 @@
   數值大小與條件設定，如`and`、`or`
 ### 2.2 while迴圈
 ### 2.3 字串格式化 `.flot()`
-  `message= "嗨，來自{}的{}".format(place, name)
-  print(message)`
+  ```message= "嗨，來自{}的{}".format(place, name)
+  print(message)```
 ### 2.4 函數撰寫
 ### 2.5 函數練習
   `def say_hi(name, place):
