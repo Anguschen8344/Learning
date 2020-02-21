@@ -4,7 +4,7 @@
 ## 1.Python程式基礎I：Python的開發環境、串列與繪圖
 ### 1.1 Jupyter魔術指令pylab
   1. inline表示於網頁中顯示結果(較不建議使用)
-  `%pylab inline' inline`
+  `%pylab inline`
   2. 其餘指令：`pi`、`sin()`、`plot()`、`randn()`取亂數
 ### 1.2 markdown筆記
   1. 如何設定標題次序
@@ -43,7 +43,8 @@
 ### 2.9 for迴圈
 ### 2.10 搜索資料 `in`
 ### 2.11 if條件判斷
-  ```message = input(">> ")
+  ```
+  message = input(">> ")
   if ("Y" in message):
       print("OK")
   elif ("N" in message):
@@ -55,7 +56,8 @@
 
 ## 3.Python強大的秘密：numpy、向量化與各式套件
 ### 3.1 正規讀套件方式
-  ```%matplotlib inline 
+  ```
+  %matplotlib inline 
   import numpy as np 
   import matplotlib.pyplot as plt
   import pandas as pd
@@ -73,7 +75,8 @@
   1.`plt.plot(y)`
   2.`np.linspace()`等距取點
 ### 3.7 Array篩選資料 array = array[條件]
-  ```plt.plot(x, y)
+  ```
+  plt.plot(x, y)
   plt.plot(x[y>0], y[y>0], "o")
   ```
 
@@ -81,7 +84,8 @@
 ### 4.1 字典檔
   `mydict = {'apple':'蘋果', 'banana':'香蕉'}`
 ### 4.2 互動模式
-  ```from ipywidgets import interact
+  ```
+  from ipywidgets import interact
   interact()
   ```
 ### 4.3 圖形互動
@@ -105,6 +109,38 @@
 ### 5.6 pandas-datareader以股票資料為例
 
 ## 6.預測未來：用線性迴歸做預測
-
+### 6.1、6.2 迴歸概念
+### 6.3 模擬線性迴歸資料
+### 6.4 假資料真迴歸
+```
+from sklearn.linear_model import LinearRegression
+```
+### 6.5 過度擬合
+### 6.6 訓練資料和測試資料.
+```
+from sklearn.model_selection import train_test_split
+```
+### 6.7 預測波士頓房價
+```
+from sklearn.datasets import load_boston
+```
+### 6.8 畫出各個feature和輸出的關係
+  1.`enumerate()`
+  2.`plt.subplot`
+  
 ## 7.成為機器學習專家：機器學習概要
+### 7.1 機器學習概念
+### 7.2 分類資料準備
+### 7.3 SVM做分類
+```
+from sklearn.svm import SVC
+```
+### 7.4 視覺化學習結果
+   `meshgrid()`、`.ravel()`、`zip()`
+### 7.5 鳶尾花數據分類練習
+### 7.6 contourf分類畫圖
+### 7.7 KMeans自動分類
+```
+from sklearn.cluster import KMeans
+```
 
