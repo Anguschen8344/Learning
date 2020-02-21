@@ -5,9 +5,9 @@
 
 ### 1.1 Jupyter魔術指令pylab
 
-  - %pylab inline' inline表示於網頁中顯示結果(較不建議使用)
+  1. %pylab inline' inline表示於網頁中顯示結果(較不建議使用)
   其餘指令
-  - 'pi'
+  2. 'pi'
   - 'sin()'
   - 'plot()'
   - 'randn()' 取亂數
