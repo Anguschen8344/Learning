@@ -15,6 +15,3 @@
   - NN、CNN、RNN神經網絡的介紹與實作
   - 轉移學習與靈活建模方法
   - AE、VAE介紹與實作
-
-### 3.資料爬蟲
-學習資源：*Website Scraping with Python: Using BeautifulSoup and Scrapy* by Gábor László Hajba
